@@ -1,0 +1,43 @@
+# ==============================================
+# SysMon .gitignore
+# ==============================================
+
+# ----- Kernel Module Build Artifacts -----
+kernel/*.o
+kernel/*.ko
+kernel/*.mod
+kernel/*.mod.c
+kernel/*.mod.o
+kernel/.*.cmd
+kernel/.tmp_versions/
+kernel/modules.order
+kernel/Module.symvers
+kernel/.cache.mk
+
+# ----- User Application Build Artifacts -----
+user/sysmon
+user/src/*.o
+
+# ----- Test Suite Build Artifacts -----
+tests/test_ioctl
+tests/*.o
+
+# ----- IDE / Editor Files -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.cproject
+
+# ----- OS Generated Files -----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----- Debug / Temporary -----
+*.log
+*.tmp
+core
+core.*
